@@ -6,13 +6,13 @@
 
 Authors: [Chundi Liu](http://www.cs.toronto.edu/~chundiliu), [Guangwei Yu](http://www.cs.toronto.edu/~guangweiyu), Cheng Chang, Himanshu Rai, Junwei Ma, Satya Krishna Gorti, [Maksims Volkovs](http://www.cs.toronto.edu/~mvolkovs)
 
-# Prerequisites
+## Prerequisites
 
 * tensorflow-gpu==1.13.1
 * numpy==1.16.0
 
 
-# Dataset
+## Dataset
 
 We provide all three datasets used in the paper, together with generated GeM descriptors and RANSAC verification results for each dataset. To run the model, download the data from [here](https://s3.amazonaws.com/public.layer6.ai/GSS/GSS.tar.gz)
 and extract it to a directory, refered to as `$DATA_DIR`. This directory should have the following structure:
