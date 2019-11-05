@@ -8,8 +8,8 @@ Authors: [Chundi Liu](http://www.cs.toronto.edu/~chundiliu), [Guangwei Yu](http:
 
 ## Prerequisites
 
-* tensorflow-gpu==1.13.1
-* numpy==1.16.0
+* tensorflow-gpu 1.13.1
+* numpy 1.16.0
 
 
 ## Dataset
