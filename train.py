@@ -10,28 +10,31 @@ from model import *
 from utils.helper import *
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--kq', type=int, default=5, help='Top k number for the query graph')
-parser.add_argument('--k', type=int, default=5, help='Top k number for the query graph')
+parser.add_argument('--kq', type=int, default=5, help='Top k number for the query graph.')
+parser.add_argument('--k', type=int, default=5, help='Top k number for the index graph.')
 parser.add_argument('--alpha', type=float, default=1, help='Parameter alpha for gss loss.')
 parser.add_argument('--beta', type=float, default=None, help='Parameter beta for gss loss.')
-parser.add_argument('--beta-percentile', type=float, default=None, help='Automatically select beta by the percentile of similarity matrix''s distribution')
+parser.add_argument('--beta-percentile', type=float, default=None, help='Automatically select beta by the percentile of similarity matrix''s distribution.')
 parser.add_argument('--seed', type=int, default=None, help='Random seed.')
 parser.add_argument('--epochs', type=int, default=200, help='Number of epochs to train.')
 parser.add_argument('--hidden-units', type=int, default=2048, help='Number of units in hidden layer')
 parser.add_argument('--num-layers', type=int, default=2, help='Number of layers')
-parser.add_argument('--lr', type=float, default=0.0001, help='Initial learning rate.')
-parser.add_argument('--init-weights', type=float, default=1e-5, help='The std of the off-diagonal elements of the weights in GCN')
+parser.add_argument('--lr', type=float, default=0.0001, help='Learning rate.')
+parser.add_argument('--init-weights', type=float, default=1e-5, help='The std of the off-diagonal elements of the weights in GCN referred as epsilon.')
 parser.add_argument('--regularizer-scale', type=float, default=1e-5, help='The scale of l2 regularization')
 parser.add_argument('--layer-decay', type=float, default=0.3, help='Residual GCN layer decay.')
 parser.add_argument('--dataset', type=str, default='roxford5k', choices=['roxford5k', 'rparis6k', 'instre'],
-                    help='type of dataset.')
-parser.add_argument('--data-path', type=str, default='/media/chundi/3b6b0f74-0ac7-42c7-b76b-00c65f5b3673/revisitop/cnnimageretrieval-pytorch/data/test/matlab_data', help='type of dataset.')
+                    help='Dataset.')
+parser.add_argument('--data-path', type=str, default=None, help='Dataset files location.')
 parser.add_argument('--gpu-id', type=int, default=None, help='Which GPU to use. By default None means training on CPU.')
 parser.add_argument("--report-hard", help="If evaluate on Hard setup or Medium. It doesn't matter to INSTRE",
                     action="store_true")
 parser.add_argument("--graph-mode", type=str, default='descriptor',
                     choices=['descriptor', 'ransac', 'approx_ransac'],
-                    help="If use pre-computed graph with spatial verification.")
+                    help="Choose the way to construct kNN graph. Descriptor mode uses the inner \\
+                    product of dense descriptors referred as GSS in the GeM+GSS. Ransac mode applies spatial verification \\
+                    on both query and index graphs referred as GeM+GSS_V-SV. Approx_ransac mode is a fast inference method \\
+                    where spatial verification is only applied on index graph during offline training phase referred as GeM+GSS_V.")
 
 args = parser.parse_args()
 for key in vars(args):
