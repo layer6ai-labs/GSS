@@ -31,11 +31,12 @@ parser.add_argument("--report-hard", help="If evaluate on Hard setup or Medium. 
                     action="store_true")
 parser.add_argument("--graph-mode", type=str, default='descriptor',
                     choices=['descriptor', 'ransac', 'approx_ransac'],
-                    help="Choose the way to construct kNN graph. Descriptor mode uses the inner \\
-                    product of dense descriptors referred as GSS in the GeM+GSS. Ransac mode applies spatial verification \\
-                    on both query and index graphs referred as GeM+GSS_V-SV. Approx_ransac mode is a fast inference method \\
-                    where spatial verification is only applied on index graph during offline training phase referred as GeM+GSS_V.")
-
+                    help="Choose the way to construct kNN graph. Descriptor mode uses the "
+                         "inner product of dense descriptors referred as GSS in the GeM+GSS. Ransac "
+                         "mode applies spatial verification on both query and index graphs referred as "
+                         "GeM+GSS_V-SV. Approx_ransac mode is a fast inference method where spatial "
+                         "verification is only applied on index graph during offline training phase "
+                         "referred as GeM+GSS_V.")
 args = parser.parse_args()
 for key in vars(args):
     print(key + ":" + str(vars(args)[key]))
