@@ -4,7 +4,7 @@
 
 ## NeurIPS'19 Guided Similarity Separation for Image Retrieval [[paper](http://www.cs.toronto.edu/~mvolkovs/NIPS2019_GSS.pdf)]
 
-Authors: [Chundi Liu](http://www.cs.toronto.edu/~chundiliu), [Guangwei Yu](http://www.cs.toronto.edu/~guangweiyu), Cheng Chang, Himanshu Rai, Junwei Ma, [Satya Krishna Gorti](http://www.cs.toronto.edu/~satyag/), [Maksims Volkovs](http://www.cs.toronto.edu/~mvolkovs)
+Authors: [Chundi Liu](http://www.cs.toronto.edu/~chundiliu), [Guangwei Yu](http://www.cs.toronto.edu/~guangweiyu), [Cheng Chang](https://scholar.google.com/citations?user=X7oyRLIAAAAJ&hl=en), Himanshu Rai, Junwei Ma, [Satya Krishna Gorti](http://www.cs.toronto.edu/~satyag/), [Maksims Volkovs](http://www.cs.toronto.edu/~mvolkovs)
 
 [[poster]](http://www.cs.toronto.edu/~chundiliu/data/NeurIPS_GSS%20Poster.pdf)[[slides]](http://www.cs.toronto.edu/~chundiliu/data/GSS%20Slides.m4v)[[video]](https://slideslive.com/38921753/track-3-session-4)
 
