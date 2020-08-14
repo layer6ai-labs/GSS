@@ -2,11 +2,11 @@
 <a href="https://layer6.ai/"><img src="https://github.com/layer6ai-labs/DropoutNet/blob/master/logs/logobox.jpg" width="180"></a>
 </p>
 
-## NeurIPS'19 Guided Similarity Separation for Image Retrieval [[paper](http://www.cs.toronto.edu/~mvolkovs/NIPS2019_GSS.pdf)]
+## NeurIPS'19 Guided Similarity Separation for Image Retrieval
 
 Authors: [Chundi Liu](http://www.cs.toronto.edu/~chundiliu), [Guangwei Yu](http://www.cs.toronto.edu/~guangweiyu), [Cheng Chang](https://scholar.google.com/citations?user=X7oyRLIAAAAJ&hl=en), Himanshu Rai, Junwei Ma, [Satya Krishna Gorti](http://www.cs.toronto.edu/~satyag/), [Maksims Volkovs](http://www.cs.toronto.edu/~mvolkovs)
 
-[[poster]](http://www.cs.toronto.edu/~chundiliu/data/NeurIPS_GSS%20Poster.pdf)[[slides]](http://www.cs.toronto.edu/~chundiliu/data/GSS%20Slides.m4v)[[video]](https://slideslive.com/38921753/track-3-session-4)
+[[paper](http://www.cs.toronto.edu/~mvolkovs/NIPS2019_GSS.pdf)][[poster]](http://www.cs.toronto.edu/~chundiliu/data/NeurIPS_GSS%20Poster.pdf)[[slides]](http://www.cs.toronto.edu/~chundiliu/data/GSS%20Slides.m4v)[[video]](https://slideslive.com/38921753/track-3-session-4)
 
 ## Prerequisites and Environment
 
